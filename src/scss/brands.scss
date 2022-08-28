@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     min-width: 0;
+    
+    padding: 0 $pagePadding;
 }
 
 .brands__header-text {

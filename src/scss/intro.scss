@@ -1,6 +1,8 @@
 .intro {
     font-family: TT Lakes;
     margin: 0;
+
+
     
     .vertical-divider {
         width: 2px;
@@ -22,6 +24,11 @@
         border-bottom: 1px solid #D9FFF5;
     }
 
+    &__hightlighted-header {
+        padding: 0 $pagePadding;
+        margin-bottom: 24px;
+    }
+
     &__logo {
         margin-right: auto;
     }
@@ -32,6 +39,7 @@
     }
 
     &__nav {
+        padding: 0 $pagePadding;
         padding: 0 16px 16px 0;
     }
 }
@@ -60,6 +68,7 @@
     gap: 5px;
     list-style-type: none;
 
+    padding: 0 $pagePadding;
     &__nav-link {
         display: inline-block;
         text-decoration: none;
@@ -82,6 +91,7 @@
 .intro-article {
    display: flex;
    flex-wrap: wrap;
+   padding: 0 $pagePadding;
 
    &__img {
         width: 50%;
@@ -91,6 +101,7 @@
 
     &__content {
         width: 50%;
+        padding-right: $pagePadding;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
