@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          intro-article="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" intro-article="ie=edge">
     <title>Блок 7</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 <body>
-    <div class="intro-description">
-        <header class="intro-description__header">
+    <div style="background-color: #F8F8F8;">
+    <div class="intro">
+        <header class="intro__header">
             <button class="accent-button accent-button--menu"></button>
             <span class="vertical-divider"></span>
-            <img src="./img/logo.svg" alt="Логотип компании" class="intro-description__logo">
+            <img src="./img/logo.svg" alt="Логотип компании" class="intro__logo">
             
             <span class="vertical-divider"></span>
             
@@ -27,15 +30,15 @@
             <label for="search" class="accent-button-label">Статус ремонта</label>
             <button id="search" class="accent-button accent-button--search"></button>
         </header>
-        <main class="intro-description__main main">
+        <main class="intro__main main">
             <header class="hightlighted-header">
                 <h1 class="hightlighted-header__title">Услуги и сервисы</h1>
-                <div class="header-button-container">
+                <div class="hightlighted-header__button-container">
                     <label class="accent-button-label">Оставить заявку<button class="accent-button accent-button--repair"></button></label> 
                     <label class="accent-button-label">Статус ремонта<button class="accent-button accent-button--search"></button></label> 
                 </div>
             </header>
-            <nav class="intro-description__nav">
+            <nav class="intro__nav">
                 <ul class="slide-menu">
                     <li><a href="#" class="slide-menu__nav-link">Ремонтируемые устройства</a></li>
                     <li><a href="#" class="slide-menu__nav-link">Ремонтируемые бренды</a></li>
@@ -45,17 +48,88 @@
                     <li><a href="#" class="slide-menu__nav-link">Отзывы</a></li>
                 </ul> 
             </nav>
-            <article class="content">
-                <div class="content__text-container">
-                    <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="content__text text-more">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                        <span class="text__more-more content__text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-                    <label><button class="text-container__show-more show-more">Читать далее</button>
+            <article class="intro-article">
+                <div class="intro-article__content">
+                    <p class="intro-article__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="intro-article__text text-more">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        <span class="text__more-more intro-article__text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    <label><button class="intro-article__show-more show-more">Читать далее</button>
                     </label>
                 </div>
-                <img class="content__content-img" src="./img/01.jpg" alt="Наша гордая стена">
+                <img class="intro-article__img" src="./img/01.jpg" alt="Наша гордая стена">
             </article>
         </main>
+    </div>
+    <div class="brands">
+        <header class="brands__header-text">Ремонт техники различных брендов</header>
+        <ul class="brands__brand-list swiper">
+            <div class="brand-list__brand-item-wrapper swiper-wrapper">
+                <template class="brand-item-template">
+                    <li class="brand-list__brand-item brand-item swiper-slide">
+                        <img src="" alt="" class="brand-item__logo">
+                        <a href="#" class="brand-item__button"></a>
+                    </li>
+                </template>
+                    <li class="brand-list__brand-item brand-item swiper-slide">
+                        <img src="" alt="" class="brand-item__logo">
+                        <a href="#" class="brand-item__button"></a>
+                    </li>
+                    <li class="brand-list__brand-item brand-item swiper-slide">
+                        <img src="" alt="" class="brand-item__logo">
+                        <a href="#" class="brand-item__button"></a>
+                    </li>
+            </div>
+            <div class="brand-list__pagination swiper-pagination"></div>
+        </ul>
+        <label><button type="button" class="brands__show-more show-more">Показать все</button></label>
+    </div>
+    <div class="prices">
+        <table class="prices__table">
+            <tr class="prices__row">
+                <th class="prices__highlighted-cell">Ремонтные услуги</th>
+                <th class="prices__highlighted-cell">Цена</th>
+                <th class="prices__highlighted-cell">Срок</th>
+                <th class="prices__highlighted-cell"></th>
+            </tr>
+            <tr class="prices__row">
+                <td class="prices__cell">Диагностика</td>
+                <td class="prices__cell">Бесплатно</td>
+                <td class="prices__cell">30 мин</td>
+                <td class="prices__cell"><a class="prices__order-button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="prices__row">
+                <td class="prices__cell">Замена дисплея</td>
+                <td class="prices__cell">1 000 ₽</td>
+                <td class="prices__cell">30 мин</td>
+                <td class="prices__cell"><a class="prices__order-button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="prices__row">
+                <td class="prices__cell">Замена полифонического динамика</td>
+                <td class="prices__cell">1 000 ₽</td>
+                <td class="prices__cell">30 мин</td>
+                <td class="prices__cell"><a class="prices__order-button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="prices__row">
+                <td class="prices__cell">Тестирование с выдачей технического заключения</td>
+                <td class="prices__cell">1 000 ₽</td>
+                <td class="prices__cell">30 мин</td>
+                <td class="prices__cell"><a class="prices__order-button" href="#">Заказать</a></td>
+            </tr>
+            <tr class="prices__row">
+                <td class="prices__cell">Замена программного обеспечения</td>
+                <td class="prices__cell">1 000 ₽</td>
+                <td class="prices__cell">30 мин</td>
+                <td class="prices__cell"><a class="prices__order-button" href="#">Заказать</a></td>
+            </tr>
+        </table>
+        <p class="prices__note-bene">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+        <a class="prices__offer-link" href="">Ремонтные услуги</a>
+    </div>
+    <footer>
+        <span>© 2019 CPS<br>Разработано командой Apesong</span>
+        <span>Политика конфиденциальности</span>
+        <span>Информация, размещенная на данной странице, не является публичной офертой</span>
+    </footer>
     </div>
     <div class="side-menu">
         <header class="side-menu__header">
