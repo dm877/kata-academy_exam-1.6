@@ -1,0 +1,9 @@
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    color: #7E7E82;
+    
+    &__text:last-child {
+        text-align: right;
+    }
+}

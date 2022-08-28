@@ -1,6 +1,5 @@
 .brands {
     font-family: 'TT Lakes';
-    background-color: #EAEAEA;
     border-top: 1px solid #D9FFF5;
     display: flex;
     flex-direction: column;
@@ -15,7 +14,7 @@
     text-transform: uppercase;
     color: #7E7E82;
     
-    margin: 16px 24px 20px 24px;
+    margin: 16px 24px 20px 0;
 }
 
 .brand-list__brand-item-wrapper {
@@ -39,7 +38,7 @@
     width: 224px;
     height: 72px;
     box-sizing: border-box;
-    background: #F8F8F8;
+    background: #FFF;
     border: 1px solid #DDDDDD;
     border-radius: 6px;
 }
@@ -59,8 +58,6 @@
 .brands__show-more {
     margin-top: 24px;
     margin-bottom: 34px;
-    margin-left: 24px;
-    margin-right: 24px;
 }
 
 .show-more {

@@ -1,6 +1,5 @@
 .intro {
     font-family: TT Lakes;
-    background-color: #F8F8F8;
     margin: 0;
     
     .vertical-divider {
@@ -29,10 +28,11 @@
 
     &__main {
         padding-top: 24px;
+        padding-bottom: 50px;
     }
 
     &__nav {
-        padding: 0 16px 16px;
+        padding: 0 16px 16px 0;
     }
 }
 
@@ -40,6 +40,9 @@
     display: flex;
     margin-left: auto;
     gap: 32px;
+    .accent-button {
+        margin-left: 8px;
+    }
 }
 
 .accent-button-label {
