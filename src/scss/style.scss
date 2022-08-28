@@ -1,12 +1,21 @@
 @import '../fonts/stylesheet.css';
+@import './highlighted-header.scss';
+@import './accent-button.scss';
+@import './show-more.scss';
 
-$bgColor: #24292e;
-$text: #fff;
+@import './intro-description.scss';
+
+@import './side-menu.scss';
+@import './side-nav.scss';
+@import './side-footer.scss';
+@import './language-switcher.scss';
+
+$bgColor: #fff;
 
 body {
-  padding: 1rem;
   margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
   font-family: 'TT Lakes';
   background-color: $bgColor;
-  color: $text;
 }

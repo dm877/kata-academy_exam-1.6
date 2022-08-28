@@ -1,14 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Блок 7</title>
 </head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+    <div class="intro-description">
+        <header class="intro-description__header">
+            <button class="accent-button accent-button--menu"></button>
+            <span class="vertical-divider"></span>
+            <img src="./img/logo.svg" alt="Логотип компании" class="intro-description__logo">
+            
+            <span class="vertical-divider"></span>
+            
+            <button class="accent-button accent-button--call"></button>
+            <button class="accent-button accent-button--chat"></button>
+            <button class="accent-button accent-button--profile"></button>
+            
+            <span class="vertical-divider"></span>
+            
+            <label for="repair" class="accent-button-label">Оставить заявку</label>
+            <button id="repair" class="accent-button accent-button--repair"></button>
+            <label for="search" class="accent-button-label">Статус ремонта</label>
+            <button id="search" class="accent-button accent-button--search"></button>
+        </header>
+        <main class="intro-description__main main">
+            <header class="hightlighted-header">
+                <h1 class="hightlighted-header__title">Услуги и сервисы</h1>
+                <div class="header-button-container">
+                    <label class="accent-button-label">Оставить заявку<button class="accent-button accent-button--repair"></button></label> 
+                    <label class="accent-button-label">Статус ремонта<button class="accent-button accent-button--search"></button></label> 
+                </div>
+            </header>
+            <nav class="intro-description__nav">
+                <ul class="slide-menu">
+                    <li><a href="#" class="slide-menu__nav-link">Ремонтируемые устройства</a></li>
+                    <li><a href="#" class="slide-menu__nav-link">Ремонтируемые бренды</a></li>
+                    <li><a href="#" class="slide-menu__nav-link">Дополнительные услуги</a></li>
+                    <li><a href="#" class="slide-menu__nav-link">Цены на услуги</a></li>
+                    <li><a href="#" class="slide-menu__nav-link">Адреса сервисных центров</a></li>
+                    <li><a href="#" class="slide-menu__nav-link">Отзывы</a></li>
+                </ul> 
+            </nav>
+            <article class="content">
+                <div class="content__text-container">
+                    <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="content__text text-more">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        <span class="text__more-more content__text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    <label><button class="text-container__show-more show-more">Читать далее</button>
+                    </label>
+                </div>
+                <img class="content__content-img" src="./img/01.jpg" alt="Наша гордая стена">
+            </article>
+        </main>
+    </div>
+    <div class="side-menu">
+        <header class="side-menu__header">
+            <button class="accent-button accent-button--close"></button>
+            <img src="./img/logo.svg" alt="CPS Логотип" class="side-menu__logo">
+            <button class="accent-button accent-button--search"></button>
+        </header>
+        <div class="side-menu__main">
+        <nav class="side-menu__side-nav-container">
+            <ul class="side-nav">
+                <li><a href="#" class="side-nav__nav-link">Ремонт техники</a></li>
+                <li><a href="#" class="side-nav__nav-link">Услуги и сервисы</a></li>
+                <li><a href="#" class="side-nav__nav-link">Корпаративным клиентам</a></li>
+                <li><a href="#" class="side-nav__nav-link">Продавцам техники</a></li>
+                <li><a href="#" class="side-nav__nav-link">Партнерам</a></li>
+                <li><a href="#" class="side-nav__nav-link">Производителям</a></li>
+                <li><a href="#" class="side-nav__nav-link">Наши сервисные центры</a></li>
+                <li><a href="#" class="side-nav__nav-link">Контакты</a></li>
+            </ul> 
+        </nav>
+        <footer class="side-menu__side-footer side-footer">
+            <div class="side-footer__contact">
+                <div class="side-footer__btn-container">
+                    <button class="accent-button accent-button--call"></button>
+                    <button class="accent-button accent-button--chat"></button>
+                    <button class="accent-button accent-button--profile"></button>
+                </div>
+                <div class="side-footer__email">main@cps.com</div>
+                <div class="side-footer__phone-number">8 800 890 8900</div>
+            </div>
+            <form class="side-footer__language-swither-form language-swither">
+                <span class="language-switcher__lang-container">
+                    <input id="ru-lang" type="radio" name="lang" value="ru" class="language-switcher__lang-input" checked>
+                    <label for="ru-lang" class="language-switcher__lang-label">RU</label>
+                </span>
+                <span class="language-switcher__lang-container">
+                    <input id="en-lang" type="radio" name="lang" value="en" class="language-switcher__lang-input">
+                    <label for="en-lang" class="language-switcher__lang-label">EN</label>
+                </span class="language-switcher__lang-container">
+                <span>
+                    <input id="cn-lang" type="radio" name="lang" value="cn" class="language-switcher__lang-input">
+                    <label for="cn-lang" class="language-switcher__lang-label">CN</label>
+                </span>
+            </form>
+        </footer>
+        </div>
+    </div> 
 </body>
 </html>

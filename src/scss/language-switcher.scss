@@ -1,0 +1,20 @@
+.language-switcher {
+    display: flex;
+    gap: 7px;
+
+    &__lang-input {
+        display: none;
+    }
+
+    &__lang-input:checked ~ &__lang-label {
+        color: #7e7e82;
+    }
+
+    &__lang-label {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+}

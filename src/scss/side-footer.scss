@@ -1,0 +1,31 @@
+.side-footer {
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__btn-container{
+        display: flex;
+        gap: 16px;
+    }
+
+    &__email {
+    font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+
+    &__phone-number {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        color: #1B1C21;
+    }
+    
+    &__language-swither {
+        margin-top: 40px;
+    }
+}
