@@ -38,5 +38,9 @@
     &__side-nav-container {
         margin-bottom: auto;
     }
+
+    @media (max-width: 1440px) {
+        display: none;
+    }
 }
 

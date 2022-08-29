@@ -19,5 +19,13 @@
         height: 100%;
     }
 
+    &__button-container {
+        display: flex;
+        margin-left: auto;
+        gap: 32px;
+        .accent-button {
+            margin-left: 8px;
+        }
+    }
 }
 

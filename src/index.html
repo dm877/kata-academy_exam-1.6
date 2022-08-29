@@ -6,8 +6,11 @@
           intro-article="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" intro-article="ie=edge">
     <title>Блок 7</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div style="background-color: #F8F8F8;">
@@ -26,9 +29,9 @@
             <span class="vertical-divider"></span>
             
             <label for="repair" class="accent-button-label">Оставить заявку</label>
-            <button id="repair" class="accent-button accent-button--repair"></button>
+            <button id="repair" class="accent-button accent-button--repair repair-burger"></button>
             <label for="search" class="accent-button-label">Статус ремонта</label>
-            <button id="search" class="accent-button accent-button--search"></button>
+            <button id="search" class="accent-button accent-button--search search-burger"></button>
         </header>
         <main class="intro__main">
             <header class="intro__hightlighted-header hightlighted-header">
@@ -39,20 +42,20 @@
                 </div>
             </header>
             <nav class="intro__nav">
-                <ul class="slide-menu">
-                    <li><a href="#" class="slide-menu__nav-link">Ремонтируемые устройства</a></li>
-                    <li><a href="#" class="slide-menu__nav-link">Ремонтируемые бренды</a></li>
-                    <li><a href="#" class="slide-menu__nav-link">Дополнительные услуги</a></li>
-                    <li><a href="#" class="slide-menu__nav-link">Цены на услуги</a></li>
-                    <li><a href="#" class="slide-menu__nav-link">Адреса сервисных центров</a></li>
-                    <li><a href="#" class="slide-menu__nav-link">Отзывы</a></li>
+                <ul class="intro-menu">
+                    <li><a href="#" class="intro-menu__nav-link">Ремонтируемые устройства</a></li>
+                    <li><a href="#" class="intro-menu__nav-link">Ремонтируемые бренды</a></li>
+                    <li><a href="#" class="intro-menu__nav-link">Дополнительные услуги</a></li>
+                    <li><a href="#" class="intro-menu__nav-link">Цены на услуги</a></li>
+                    <li><a href="#" class="intro-menu__nav-link">Адреса сервисных центров</a></li>
+                    <li><a href="#" class="intro-menu__nav-link">Отзывы</a></li>
                 </ul> 
             </nav>
             <article class="intro-article">
                 <div class="intro-article__content">
                     <p class="intro-article__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="intro-article__text text-more">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                        <span class="text__more-more intro-article__text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    <p class="intro-article__text intro-article__text-more">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        <span class="intro-article__text intro-article__text-more-more">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
                     <label><button class="intro-article__show-more show-more">Читать далее</button>
                     </label>
                 </div>
@@ -62,22 +65,14 @@
     </div>
     <div class="brands">
         <header class="brands__header-text">Ремонт техники различных брендов</header>
-        <ul class="brands__brand-list swiper">
-            <div class="brand-list__brand-item-wrapper swiper-wrapper">
+        <ul class="brands__brand-list brand-list swiper">
+            <div class="brand-list__wrapper swiper-wrapper">
                 <template class="brand-item-template">
                     <li class="brand-list__brand-item brand-item swiper-slide">
                         <img src="" alt="" class="brand-item__logo">
                         <a href="#" class="brand-item__button"></a>
                     </li>
                 </template>
-                    <li class="brand-list__brand-item brand-item swiper-slide">
-                        <img src="" alt="" class="brand-item__logo">
-                        <a href="#" class="brand-item__button"></a>
-                    </li>
-                    <li class="brand-list__brand-item brand-item swiper-slide">
-                        <img src="" alt="" class="brand-item__logo">
-                        <a href="#" class="brand-item__button"></a>
-                    </li>
             </div>
             <div class="brand-list__pagination swiper-pagination"></div>
         </ul>
