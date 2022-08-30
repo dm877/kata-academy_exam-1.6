@@ -8,4 +8,7 @@
     &__text:last-child {
         text-align: right;
     }
+    &__text:nth-child(2) {
+        text-align: center;
+    }
 }

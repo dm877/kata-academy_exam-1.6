@@ -1,4 +1,6 @@
 .brand-list {
+    display: flex;
+    min-width: 0;
    &__wrapper {
         display: flex;
         flex-wrap: wrap;

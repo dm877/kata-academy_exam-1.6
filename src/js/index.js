@@ -1,6 +1,7 @@
 import '../scss/style.scss';
-import {displayBrands} from './brands.js';
+import {mod} from './checkMod.js';
+import {renderBrands} from './brands.js';
 
-displayBrands();
+renderBrands(mod);
 
 console.log('Works!');

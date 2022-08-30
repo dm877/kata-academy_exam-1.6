@@ -18,7 +18,7 @@ let brandItemTemplate = document.querySelector('.brand-item-template').content;
 let brandListWrapper = document.querySelector('.brand-list__wrapper');
 
 
-function mobileMod() {
+function mobileMod(brandItemCount) {
     new Swiper('.brand-list', {
     direction: 'horizontal',
     clickable: true,
@@ -38,7 +38,7 @@ function mobileMod() {
     }    
 }
 
-function desktopMod() {
+function desktopMod(brandItemCount) {
     let showMore = document.querySelector('.brands__show-more');
     let additionalBrandItems = [];
     
@@ -82,23 +82,14 @@ function makeBrandItem(brandData, isMobile) {
     return brandItem;
 }
 
-function setDisplayMod() {
-    if(window.matchMedia('(min-width: 768px)').matches) { // от 768
-        if (window.matchMedia( '(min-width: 1120px)').matches) { // от 1120 и больше
-            brandItemCount = 8;
-        }
-        else { // от 768 до 1120
-            brandItemCount = 6;
-        }
-        console.log('desktop mod');
-        desktopMod();
-    } else { // меньше 768
-        console.log('mobile mod');
-        brandItemCount = 8;
-        mobileMod();
+function renderBrands(mod) {
+    if (mod === 1) { //desktop
+        desktopMod(6);
+    } else if (mod === 2) { //large desktop
+        desktopMod(8);
+    } else { //mobile
+        mobileMod(9);
     }
 }
 
-setDisplayMod();
-
-export {setDisplayMod as displayBrands}
+export {renderBrands};
