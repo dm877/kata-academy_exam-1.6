@@ -6,6 +6,9 @@ $pagePadding: 34px;
 @import './highlighted-header.scss';
 @import './accent-button.scss';
 @import './show-more.scss';
+@import './header-text.scss';
+
+@import './main-page.scss';
 
 @import './intro.scss';
 @import './intro-menu.scss';
@@ -31,8 +34,6 @@ $bgColor: #fff;
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: row-reverse;
   font-family: 'TT Lakes';
   background-color: $bgColor;
 }

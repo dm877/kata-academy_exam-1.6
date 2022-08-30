@@ -13,6 +13,52 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <div class="side-menu">
+        <header class="side-menu__header">
+            <button class="accent-button accent-button--close"></button>
+            <img src="./img/logo.svg" alt="CPS Логотип" class="side-menu__logo">
+            <button class="accent-button accent-button--search"></button>
+        </header>
+        <div class="side-menu__main">
+        <nav class="side-menu__side-nav-container">
+            <ul class="side-nav">
+                <li><a href="#" class="side-nav__nav-link">Ремонт техники</a></li>
+                <li><a href="#" class="side-nav__nav-link">Услуги и сервисы</a></li>
+                <li><a href="#" class="side-nav__nav-link">Корпаративным клиентам</a></li>
+                <li><a href="#" class="side-nav__nav-link">Продавцам техники</a></li>
+                <li><a href="#" class="side-nav__nav-link">Партнерам</a></li>
+                <li><a href="#" class="side-nav__nav-link">Производителям</a></li>
+                <li><a href="#" class="side-nav__nav-link">Наши сервисные центры</a></li>
+                <li><a href="#" class="side-nav__nav-link">Контакты</a></li>
+            </ul> 
+        </nav>
+        <footer class="side-menu__side-footer side-footer">
+            <div class="side-footer__contact">
+                <div class="side-footer__btn-container">
+                    <button class="accent-button accent-button--call"></button>
+                    <button class="accent-button accent-button--chat"></button>
+                    <button class="accent-button accent-button--profile"></button>
+                </div>
+                <div class="side-footer__email">main@cps.com</div>
+                <div class="side-footer__phone-number">8 800 890 8900</div>
+            </div>
+            <form class="side-footer__language-swither-form language-swither">
+                <span class="language-switcher__lang-container">
+                    <input id="ru-lang" type="radio" name="lang" value="ru" class="language-switcher__lang-input" checked>
+                    <label for="ru-lang" class="language-switcher__lang-label">RU</label>
+                </span>
+                <span class="language-switcher__lang-container">
+                    <input id="en-lang" type="radio" name="lang" value="en" class="language-switcher__lang-input">
+                    <label for="en-lang" class="language-switcher__lang-label">EN</label>
+                </span class="language-switcher__lang-container">
+                <span>
+                    <input id="cn-lang" type="radio" name="lang" value="cn" class="language-switcher__lang-input">
+                    <label for="cn-lang" class="language-switcher__lang-label">CN</label>
+                </span>
+            </form>
+        </footer>
+        </div>
+    </div> 
     <div class="main-page">
     <div class="intro">
         <header class="intro__header">
@@ -64,7 +110,7 @@
         </main>
     </div>
     <div class="brands">
-        <header class="brands__header-text">Ремонт техники различных брендов</header>
+        <h2 class="header-text">Ремонт техники различных брендов</h2>
         <ul class="brands__brand-list brand-list swiper">
             <div class="brand-list__wrapper swiper-wrapper">
                 <template class="brand-item-template">
@@ -79,6 +125,7 @@
         <label><button type="button" class="brands__show-more show-more">Показать все</button></label>
     </div>
     <div class="prices">
+        <h2 class="header-text">Цены на услуги</h2>
         <table class="prices__table">
             <tr class="prices__row">
                 <th class="prices__highlighted-cell">Ремонтные услуги</th>
@@ -126,51 +173,5 @@
         <span class="footer-info__text">Информация, размещенная на данной странице,<br>не является публичной офертой</span>
     </footer>
     </div>
-    <div class="side-menu">
-        <header class="side-menu__header">
-            <button class="accent-button accent-button--close"></button>
-            <img src="./img/logo.svg" alt="CPS Логотип" class="side-menu__logo">
-            <button class="accent-button accent-button--search"></button>
-        </header>
-        <div class="side-menu__main">
-        <nav class="side-menu__side-nav-container">
-            <ul class="side-nav">
-                <li><a href="#" class="side-nav__nav-link">Ремонт техники</a></li>
-                <li><a href="#" class="side-nav__nav-link">Услуги и сервисы</a></li>
-                <li><a href="#" class="side-nav__nav-link">Корпаративным клиентам</a></li>
-                <li><a href="#" class="side-nav__nav-link">Продавцам техники</a></li>
-                <li><a href="#" class="side-nav__nav-link">Партнерам</a></li>
-                <li><a href="#" class="side-nav__nav-link">Производителям</a></li>
-                <li><a href="#" class="side-nav__nav-link">Наши сервисные центры</a></li>
-                <li><a href="#" class="side-nav__nav-link">Контакты</a></li>
-            </ul> 
-        </nav>
-        <footer class="side-menu__side-footer side-footer">
-            <div class="side-footer__contact">
-                <div class="side-footer__btn-container">
-                    <button class="accent-button accent-button--call"></button>
-                    <button class="accent-button accent-button--chat"></button>
-                    <button class="accent-button accent-button--profile"></button>
-                </div>
-                <div class="side-footer__email">main@cps.com</div>
-                <div class="side-footer__phone-number">8 800 890 8900</div>
-            </div>
-            <form class="side-footer__language-swither-form language-swither">
-                <span class="language-switcher__lang-container">
-                    <input id="ru-lang" type="radio" name="lang" value="ru" class="language-switcher__lang-input" checked>
-                    <label for="ru-lang" class="language-switcher__lang-label">RU</label>
-                </span>
-                <span class="language-switcher__lang-container">
-                    <input id="en-lang" type="radio" name="lang" value="en" class="language-switcher__lang-input">
-                    <label for="en-lang" class="language-switcher__lang-label">EN</label>
-                </span class="language-switcher__lang-container">
-                <span>
-                    <input id="cn-lang" type="radio" name="lang" value="cn" class="language-switcher__lang-input">
-                    <label for="cn-lang" class="language-switcher__lang-label">CN</label>
-                </span>
-            </form>
-        </footer>
-        </div>
-    </div> 
 </body>
 </html>

@@ -1,6 +1,8 @@
 .brand-list {
     display: flex;
+    max-width: 100vw;
     min-width: 0;
+    margin-bottom: 24px;
    &__wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -28,8 +30,6 @@
    @media (max-width: 768px) { /* M O B I L E */
     & {
         height: 100px;
-        margin-left: 16px;
-        margin-top: 0;
     }
     &__wrapper {
         gap: 0;

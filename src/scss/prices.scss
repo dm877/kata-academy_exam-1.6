@@ -1,13 +1,12 @@
 .prices {
     /*padding: 16px;*/
-    border-top: 1px solid #D9FFF5;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
 
-    padding: 0 $pagePadding;
 
     &__table {
+        padding: 0 $pagePadding;
         border-spacing: 0;
         width: 100%;
     }
@@ -54,6 +53,7 @@
     }
 
     &__note-bene {
+        padding: 0 $pagePadding;
         text-align: left;
         max-width: 40%;
         font-size: 14px;
@@ -61,6 +61,7 @@
         letter-spacing: 0.2px;
     }
     &__offer-link {
+        padding: 0 $pagePadding;
         color: #1B1C21;;
         display: inline-block;
         font-size: 16px;
@@ -79,6 +80,8 @@
         background-position: right center;
     }
     @media (max-width: 768px) {
-       & {display: none;} 
+        &__row:first-child {
+            display: none;
+        }
     }
 }

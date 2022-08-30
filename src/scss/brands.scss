@@ -1,25 +1,12 @@
 .brands {
     font-family: 'TT Lakes';
-    border-top: 1px solid #D9FFF5;
     display: flex;
     flex-direction: column;
     min-width: 0;
+    max-width: 100%;
     
-    &__header-text {
-        font-family: 'TT Lakes';
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        text-transform: uppercase;
-        color: #7E7E82;
-
-        background-color: #FFFFFF;
-        padding: 16px $pagePadding;
-
-    }
-
     &__brand-list {
-        margin: 24px 0 0 $pagePadding;
+        margin: 0 $pagePadding;
     }
 
     &__show-more {

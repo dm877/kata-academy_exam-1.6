@@ -1,4 +1,4 @@
-function currentMod() {
+function defineMod() {
     if(window.matchMedia('(min-width: 768px)').matches) { // от 768
         console.log('Desktop mod');
         if (window.matchMedia( '(min-width: 1440px)').matches) { // от 1120 и больше
@@ -13,6 +13,6 @@ function currentMod() {
     }
 }
 
-let mod = currentMod(); //0 - мобила 1 - Десктоп, 2 - Десктоп расширенный
+let mod = defineMod(); //0 - мобила 1 - Десктоп, 2 - Десктоп расширенный
 
 export {mod}
