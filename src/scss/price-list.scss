@@ -1,0 +1,40 @@
+.price-list {
+    display: flex;
+    min-width: 0;
+    min-height: 160px;
+    padding-bottom: 25px;
+    list-style-type: none;
+
+    &__wrapper {
+        padding: 0 $pagePadding;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    &__pagination {
+        bottom: 0 !important;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    &__pagination .swiper-pagination-bullet {
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        margin: 0 8px;
+        background-color: #DDDDDD;
+    }
+
+    &__pagination .swiper-pagination-bullet-active {
+        background-color: #B5B6BC;
+    }
+
+   @media (min-width: 767px) {
+    &__pagination {
+        display: none;
+    }
+
+    &__wrapper {
+    }
+}
+}

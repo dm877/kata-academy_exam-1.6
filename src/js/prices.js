@@ -1,19 +1,19 @@
-function typesSwiperInit() {
-    new Swiper('.type-list', {
+function pricesSwiperInit() {
+    new Swiper('.price-list', {
         direction: 'horizontal',
         clickable: true,
         spaceBetween: 20,
         slidesPerView: 1,
         slidesPerGroup: 1,
         
-        width: 224,
-        height: 160,
+        width: 260,
+        height: 200,
 
         pagination: {
-          el: '.type-list__pagination',
+          el: '.price-list__pagination',
         },
         observer: true,
     });
 }
 
-export {typesSwiperInit}
+export {pricesSwiperInit}

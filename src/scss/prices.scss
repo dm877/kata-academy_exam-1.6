@@ -1,61 +1,11 @@
 .prices {
-    /*padding: 16px;*/
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
 
-
-    &__table {
-        padding: 0 $pagePadding;
-        border-spacing: 0;
-        width: 100%;
-    }
-
-    &__row {
-        background-color: #fff;
-        .prices__cell:last-child {
-            text-align: right;
-        }
-    }
-    
-    &__cell {
-        padding: 23px 16px;
-        border-bottom: 1px solid #EAEAEA;
-    }
-
-    &__highlighted-cell {
-        @extend .prices__cell;
-        text-align: left;
-        font-weight: normal;
-        color: #7E7E82;
-        background-color: #F8F8F8;
-    }
-
-    &__order-button {
-        text-align: right;
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-
-        background-color: #FF3E79;
-        color: #fff;
-        
-        box-sizing: border-box;
-        font-size: 12px;
-        line-height: 24px;
-        padding: 4px 40px 4px 12px;
-        border-radius: 16px;
-
-	    background-image: url("data:image/svg+xml,%3Csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z' fill='white'/%3E%3C/svg%3E"); 
-        background-repeat: no-repeat;
-        background-position-x: 96px;
-        background-position-y: center;
-    }
-
     &__note-bene {
         padding: 0 $pagePadding;
         text-align: left;
-        max-width: 40%;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
@@ -79,9 +29,14 @@
         background-repeat: no-repeat;
         background-position: right center;
     }
-    @media (max-width: 768px) {
-        &__row:first-child {
-            display: none;
+    @media (min-width: 767px) {
+        &__note-bene {
+            max-width: 40%;
+        }
+        &__table {
+            padding: 0 $pagePadding;
+            border-spacing: 0;
+            width: 100%;
         }
     }
 }

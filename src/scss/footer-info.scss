@@ -4,22 +4,32 @@
     display: flex;
     justify-content: space-between;
     color: #7E7E82;
+    border-top: 1px solid #D9FFF5;
     
-    &__text:last-child {
-        text-align: right;
+    &__text:first-child {
+        padding-top: 16px;
     }
+
     &__text:nth-child(2) {
         text-align: center;
     }
-    @media (max-width: 768px) {
+    & {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 19px;
+    }
+    &__text, &__text:last-child {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    @media (min-width: 767px) {
         & {
             flex-direction: column;
-            align-items: center;
-            margin-bottom: 19px;
+            align-items: flex-start;
+            margin-bottom: 0;
         }
-        &__text, &__text:last-child {
-            margin-bottom: 16px;
-            text-align: center;
+        &__text:last-child {
+            text-align: right;
         }
     }
 }

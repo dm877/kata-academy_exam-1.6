@@ -1,5 +1,4 @@
 .brands {
-    font-family: 'TT Lakes';
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -10,6 +9,7 @@
     }
 
     &__show-more {
+        align-self: flex-start;
         margin-top: 24px;
         margin-bottom: 34px;
         margin-left: $pagePadding;

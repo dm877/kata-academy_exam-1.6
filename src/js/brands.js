@@ -12,8 +12,6 @@ let brandsData = [
     { title: 'Huawei', link: '#', imageUrl: './img/brands/huawei.svg'}
 ];
 
-let brandItemCount = 6;
-
 let brandItemTemplate = document.querySelector('.brand-item-template').content;
 let brandListWrapper = document.querySelector('.brand-list__wrapper');
 

@@ -1,5 +1,4 @@
 .intro {
-    font-family: TT Lakes;
     margin: 0;
 
     .vertical-divider {
@@ -31,6 +30,16 @@
                 display: none;
             }
         }
+    }
+    
+    .accent-button--call, .accent-button--chat, .accent-button--profile {
+        display: none;
+    }
+    &__text-more, &__text-more-more {
+        display: none;
+    }
+    .vertical-divider:nth-of-type(1) {
+        display: none;
     }
 
     &__hightlighted-header {
@@ -68,24 +77,6 @@
 
     @media (max-width: 1440px) {
         .vertical-divider:nth-of-type(2) {
-            display: none;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .accent-button--call, .accent-button--chat, .accent-button--profile {
-            display: none;
-        }
-        &__text-more, &__text-more-more {
-            display: none;
-        }
-        .vertical-divider:nth-of-type(1), .vertical-divider:nth-of-type(3) {
-            display: none;
-        }
-        .vertical-divider:nth-of-type(2) {
-            display: block;
-        }
-        & {
             display: none;
         }
     }

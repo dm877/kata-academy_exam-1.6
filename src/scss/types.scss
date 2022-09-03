@@ -1,0 +1,14 @@
+.types {
+    &__show-more {
+        align-self: flex-start;
+        margin-top: 24px;
+        margin-bottom: 34px;
+        margin-left: $pagePadding;
+        display: none;
+    }
+    @media (min-width: 767px) {
+        &__show-more {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.type-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 224px;
+    min-height: 160px;
+    box-sizing: border-box;
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+
+    &__title {
+        align-self: flex-start;
+    }
+
+    &__arrow-button {
+        align-self: flex-end;
+    }
+}

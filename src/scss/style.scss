@@ -1,4 +1,12 @@
-$pagePadding: 34px;
+$pagePadding: 16px;
+
+@media (min-width: 767px) {
+  $pagePadding: 24px;
+}
+@media (min-width: 767px) {
+  $pagePadding: 34px;
+}
+
 
 @import url('https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
 
@@ -7,6 +15,8 @@ $pagePadding: 34px;
 @import './accent-button.scss';
 @import './show-more.scss';
 @import './header-text.scss';
+@import './arrow-button.scss';
+@import './order-button.scss';
 
 @import './main-page.scss';
 
@@ -18,7 +28,13 @@ $pagePadding: 34px;
 @import './brand-list.scss';
 @import './brand-item.scss';
 
+@import './types.scss';
+@import './type-list.scss';
+@import './type-item.scss';
+
 @import './prices.scss';
+@import './price-list.scss';
+@import './price-item.scss';
 
 @import './side-menu.scss';
 @import './side-nav.scss';
@@ -27,8 +43,8 @@ $pagePadding: 34px;
 
 @import './footer-info.scss';
 
-@import './repair-burger.scss';
-@import './search-burger.scss';
+@import './repair-modal.scss';
+@import './search-modal.scss';
 
 $bgColor: #fff;
 

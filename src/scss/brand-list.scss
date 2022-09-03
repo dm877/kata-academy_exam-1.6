@@ -8,6 +8,7 @@
         flex-wrap: wrap;
         column-gap: 32px;
         row-gap: 10px;
+        margin-left: $pagePadding;
    }
    @media (min-width: 768px) {
       &__pagination {
@@ -18,7 +19,6 @@
         margin: 0;
         list-style-type: none;
         padding-left: 0;
-        margin-left: 24px;
         
         display: flex;
         flex-wrap: wrap;
@@ -30,6 +30,8 @@
    @media (max-width: 768px) { /* M O B I L E */
     & {
         height: 100px;
+        margin-right: 0;
+        margin-left: 0;
     }
     &__wrapper {
         gap: 0;
