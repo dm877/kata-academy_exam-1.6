@@ -4,6 +4,8 @@ import {renderBrands} from './brands.js';
 import {typesSwiperInit} from './types.js';
 import {pricesSwiperInit} from './prices.js';
 import './menu-burger.js';
+import './feedback-modal.js';
+import './call-modal.js';
 
 renderBrands(mod);
 if (mod === 0) {

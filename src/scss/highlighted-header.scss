@@ -1,6 +1,7 @@
 .hightlighted-header{
     display: flex;
     align-items: center;
+    padding: 0 $pagePadding;
 
     &__title {
         font-size: 28px;

@@ -1,0 +1,36 @@
+.modal-form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0 $pagePadding;
+    &__input {
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        padding: 12px 0 12px 16px;
+        &::placeholder {
+            font-family: 'TT Lakes';
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #B5B6BC;
+            opacity: 1;
+        }
+    }
+    &__note-bene {
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+    }
+    &__attention {
+        color: #FF3E79;
+    }
+    &__order-button {
+       position: relative;
+       max-width: 136px;
+       align-self: flex-end; 
+       border: none;
+    }
+}
