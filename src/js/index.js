@@ -3,6 +3,7 @@ import {mod} from './defineMod.js';
 import {renderBrands} from './brands.js';
 import {typesSwiperInit} from './types.js';
 import {pricesSwiperInit} from './prices.js';
+import './menu-burger.js';
 
 renderBrands(mod);
 if (mod === 0) {
