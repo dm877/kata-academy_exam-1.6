@@ -67,7 +67,7 @@ function makeBrandItem(brandData, isMobile) {
     brandItemLogo.src = brandData.imageUrl;
     brandItemLogo.alt = brandData.title;
 
-    let brandItemButton = brandItem.querySelector('.brand-item__button');
+    let brandItemButton = brandItem.querySelector('.arrow-button');
     brandItemButton.href = brandData.link;
 
     if(isMobile) {

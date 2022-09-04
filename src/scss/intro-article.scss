@@ -44,6 +44,8 @@
     @media (min-width: 767px) {
         & {
             padding: 0 $pagePadding;
+            flex-wrap: nowrap;
+            flex-direction: row;
         }
         &__content {
             max-width: 50%;
@@ -52,7 +54,7 @@
         &__img {
             max-width: 50%;
             max-height: 320px;
-        border-radius: 6px;
+            border-radius: 6px;
         }
         
         &__show-more {

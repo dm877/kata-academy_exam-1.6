@@ -14,10 +14,13 @@
         margin-bottom: 34px;
         margin-left: $pagePadding;
     }
+    .brands__show-more {
+        display: none;
+    }
 
-    @media (max-width: 767px) { /* M O B I L E */
+    @media (min-width: 767px) { /* M O B I L E */
         .brands__show-more {
-            display: none;
+            display: inline-block;
         }
     }
 }
