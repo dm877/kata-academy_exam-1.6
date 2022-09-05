@@ -1313,7 +1313,6 @@
       flex-basis: 30%; } }
 
 .modal-form {
-  padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -1364,14 +1363,20 @@
     position: relative;
     max-width: 136px;
     align-self: flex-end;
-    border: none; }
+    border: none;
+    margin-right: 16px; }
+  .modal-form__accent-button {
+    margin: 24px 0 0 16px; }
   @media (min-width: 767px) {
     .modal-form {
+      padding-top: 10px;
       border-left: 1px solid #D9FFF5;
       width: 320px;
       box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
       height: 100%;
-      padding-top: 16px; } }
+      padding-top: 16px; }
+    .modal-form__accent-button {
+      display: none; } }
 
 .feedback-modal {
   z-index: 10;
@@ -1392,7 +1397,7 @@
     visibility: visible;
     transform: translateX(0px); }
   .feedback-modal__accent-button {
-    margin: 24px 0 0 16px; }
+    display: none; }
   .feedback-modal__hightlighted-header {
     margin-top: 32px; }
   @media (min-width: 767px) {
@@ -1408,6 +1413,7 @@
       visibility: visible;
       transform: translateX(0px); }
     .feedback-modal__accent-button {
+      display: block;
       z-index: 10;
       margin: 0;
       margin-top: 16px;
@@ -1432,7 +1438,7 @@
     visibility: visible;
     transform: translateX(0px); }
   .call-modal__accent-button {
-    margin: 24px 0 0 16px; }
+    display: none; }
   .call-modal__hightlighted-header {
     margin-top: 32px; }
   @media (min-width: 767px) {
@@ -1448,6 +1454,7 @@
       visibility: visible;
       transform: translateX(0px); }
     .call-modal__accent-button {
+      display: block;
       z-index: 10;
       margin: 0;
       margin-top: 16px;
