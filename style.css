@@ -779,8 +779,6 @@
       .intro__header {
         display: none; } }
     @media (min-width: 767px) {
-      .intro__header .accent-button-label {
-        display: none; }
       .intro__header .accent-button--call, .intro__header .accent-button--chat, .intro__header .accent-button--profile {
         display: block; }
       .intro__header .vertical-divider:nth-of-type(1) {
@@ -794,11 +792,11 @@
   .intro__main {
     padding-top: 24px;
     padding-bottom: 50px; }
-    @media (min-width: 767px) {
-      .intro__main .accent-button {
-        display: none; }
-      .intro__main .accent-button-label {
-        display: none; } }
+    .intro__main .accent-button, .intro__main .accent-button-label {
+      display: none; }
+    @media (min-width: 1439px) {
+      .intro__main .accent-button, .intro__main .accent-button-label {
+        display: block; } }
 
 .intro-menu {
   padding-left: 0px;
@@ -1085,6 +1083,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
+  .price-item__description {
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+    mix-blend-mode: normal;
+    opacity: 0.72; }
   .price-item__description:first-child {
     padding-top: 0; }
   .price-item__value:last-child {
