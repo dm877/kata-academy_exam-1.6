@@ -23,7 +23,7 @@
     }
 
     &__accent-button {
-        margin: $pagePadding*1.5 0 0 $pagePadding;
+        display: none;
     }
 
     &__hightlighted-header {
@@ -45,6 +45,7 @@
         }
 
         &__accent-button {
+            display: block;
             z-index: 10;
             margin: 0;
             margin-top: $pagePadding; 

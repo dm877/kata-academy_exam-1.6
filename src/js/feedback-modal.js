@@ -1,6 +1,6 @@
 const feedbackModal = document.querySelector('.feedback-modal');
 const feedbackButtons = document.querySelectorAll('.accent-button--chat');
-const closeButton = feedbackModal.querySelector('.accent-button--close');
+const closeFeedbackButtons = feedbackModal.querySelectorAll('.accent-button--close');
 
 const mainBlocker = document.querySelector('.main-blocker');
 
@@ -11,7 +11,9 @@ for(let i = 0;i<feedbackButtons.length ;i++) {
     });
 }
 
-closeButton.addEventListener('click', function () {
-    feedbackModal.classList.remove('feedback-modal--open');
-    mainBlocker.classList.remove('main-blocker--display');
-});
+for(let i = 0;i<closeFeedbackButtons.length ;i++) {
+    closeFeedbackButtons[i].addEventListener('click', function () {
+        feedbackModal.classList.remove('feedback-modal--open');
+        mainBlocker.classList.remove('main-blocker--display');
+    });
+}
