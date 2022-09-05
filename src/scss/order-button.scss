@@ -16,6 +16,9 @@
         background-repeat: no-repeat;
         background-position-x: 96px;
         background-position-y: center;
+
+        opacity: 1;
+        transition: opacity .4s ease-in;
     &:hover {
         opacity: 0.8;
     }
