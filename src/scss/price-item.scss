@@ -9,6 +9,16 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    &__description {
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #7E7E82;
+
+        mix-blend-mode: normal;
+        opacity: 0.72;
+    }
     
     &__description:first-child {
         padding-top: 0;

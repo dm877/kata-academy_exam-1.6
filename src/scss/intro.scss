@@ -35,9 +35,6 @@
             }
         }
         @media (min-width: 767px) {
-            .accent-button-label {
-                display: none;
-            }
             .accent-button--call, .accent-button--chat, .accent-button--profile {
                 display: block;
             }
@@ -63,12 +60,12 @@
     &__main {
         padding-top: 24px;
         padding-bottom: 50px;
-        @media (min-width: 767px) {
-            .accent-button {
-                display: none;
-            }
-            .accent-button-label {
-                display: none;
+        .accent-button, .accent-button-label {
+            display: none;
+        }
+        @media (min-width: 1439px) {
+            .accent-button, .accent-button-label {
+                display: block;
             }
         }
     }
