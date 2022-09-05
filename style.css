@@ -796,7 +796,7 @@
       display: none; }
     @media (min-width: 1439px) {
       .intro__main .accent-button, .intro__main .accent-button-label {
-        display: block; } }
+        display: flex; } }
 
 .intro-menu {
   padding-left: 0px;
