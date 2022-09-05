@@ -4,7 +4,16 @@
     .vertical-divider {
         width: 2px;
         height: 32px;
-        background-image: url('data:image/svg+xml,%3Csvg width="2" height="32" viewBox="0 0 2 32" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="2" height="32" rx="1" fill="%23EAEAEA"/%3E%3C/svg%3E');
+        background-color: #EAEAEA;
+        border-radius: 2px;
+    }
+    
+    .accent-button--call, .accent-button--chat, .accent-button--profile {
+        display: none;
+    }
+    
+    .vertical-divider:nth-of-type(1) {
+        display: none;
     }
     
     &__header {
@@ -20,27 +29,28 @@
         gap: 15px;
         border-bottom: 1px solid #D9FFF5;
         
-        @media (min-width: 1440px) {
+        @media (min-width: 1439px) {
             & {
                 display: none;
             }
         }
-        @media (max-width: 1440px) {
+        @media (min-width: 767px) {
             .accent-button-label {
                 display: none;
+            }
+            .accent-button--call, .accent-button--chat, .accent-button--profile {
+                display: block;
+            }
+            .vertical-divider:nth-of-type(1) {
+                display: block;
             }
         }
     }
     
-    .accent-button--call, .accent-button--chat, .accent-button--profile {
-        display: none;
-    }
     &__text-more, &__text-more-more {
         display: none;
     }
-    .vertical-divider:nth-of-type(1) {
-        display: none;
-    }
+    
 
     &__hightlighted-header {
         margin-bottom: 24px;
@@ -53,30 +63,13 @@
     &__main {
         padding-top: 24px;
         padding-bottom: 50px;
-        @media (max-width: 1440px) {
-            .vertical-divider:nth-of-type(2) {
-                display: none;
-            }
+        @media (min-width: 767px) {
             .accent-button {
                 display: none;
             }
             .accent-button-label {
                 display: none;
             }
-        }
-        @media (max-width: 1440px) {
-            .accent-button--repair {
-                display: none;
-            }
-            .vertical-divider:nth-of-type(2) {
-                display: none;
-            }
-        }
-    }
-
-    @media (max-width: 1440px) {
-        .vertical-divider:nth-of-type(2) {
-            display: none;
         }
     }
 }

@@ -3,9 +3,12 @@
     opacity: 0;
     visibility: hidden;
     transition: all .4s ease-in;
-    background-color: #FFFFFF;
+    background-color: transparent;
     transform: translateX(-100%);
     overflow-y: auto;
+
+    display: flex;
+    
 
     position: fixed;
     left: 0;
@@ -26,5 +29,26 @@
     &__hightlighted-header {
         margin-top: 32px;
     }
-    
+
+    @media (min-width: 767px) {
+        & {
+            right: 0;
+            left: auto;
+            transform: translateX(100%);
+            width: fit-content;
+        }
+
+        &--open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0px);
+        }
+
+        &__accent-button {
+            z-index: 10;
+            margin: 0;
+            margin-top: $pagePadding; 
+            margin-right: $pagePadding;
+        }
+    }
 }

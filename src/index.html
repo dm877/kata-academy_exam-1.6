@@ -61,37 +61,40 @@
     </div>
     <div class="feedback-modal">
         <button class="feedback-modal__accent-button accent-button accent-button--close"></button>
-        <header class="feedback-modal__hightlighted-header hightlighted-header">
-                <h2 class="hightlighted-header__title">Обратная связь</h2>
-        </header>
+        
         <form action="" method="get" class="modal-form">
-                <input type="text" placeholder="Имя" class="modal-form__input">
-                <input type="tel" placeholder="Телефон" class="modal-form__input">
-                <input type="email" placeholder="Электронная почта" class="modal-form__input">
-                <input type="text" placeholder="Сообщение" class="modal-form__input">
-                <div class="modal-form__note-bene">Нажимая “отправить”, вы даете согласие на <span class="modal-form__attention">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-form__attention">политикой конфиденциальности</span></div>
-                <button type="submit" class="modal-form__order-button order-button">Отправить</button>
+            <header class="modal-form__hightlighted-header hightlighted-header">
+                <h2 class="hightlighted-header__title">Обратная связь</h2>
+            </header>
+            <input type="text" placeholder="Имя" class="modal-form__input">
+            <input type="tel" placeholder="Телефон" class="modal-form__input">
+            <input type="email" placeholder="Электронная почта" class="modal-form__input">
+            <textarea rows="4" placeholder="Сообщение" class="modal-form__input"></textarea>
+            <div class="modal-form__note-bene">Нажимая “отправить”, вы даете согласие на <span class="modal-form__attention">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-form__attention">политикой конфиденциальности</span></div>
+            <button type="submit" class="modal-form__order-button order-button">Отправить</button>
         </form>
     </div> 
     <div class="call-modal">
-        <button class="feedback-modal__accent-button accent-button accent-button--close"></button>
-        <header class="feedback-modal__hightlighted-header hightlighted-header">
-                <h2 class="hightlighted-header__title">Заказать звонок</h2>
-        </header>
+        <button class="call-modal__accent-button accent-button accent-button--close"></button>
         <form action="" method="get" class="modal-form">
-                <input type="tel" placeholder="Телефон" class="modal-form__input">
-                <div class="modal-form__note-bene">Нажимая “отправить”, вы даете согласие на <span class="modal-form__attention">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-form__attention">политикой конфиденциальности</span></div>
-                <button type="submit" class="modal-form__order-button order-button">Отправить</button>
+            <header class="modal-form__hightlighted-header hightlighted-header">
+                <h2 class="hightlighted-header__title">Заказать звонок</h2>
+            </header>
+            <input type="tel" placeholder="Телефон" class="modal-form__input">
+            <div class="modal-form__note-bene">Нажимая “отправить”, вы даете согласие на <span class="modal-form__attention">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-form__attention">политикой конфиденциальности</span></div>
+            <button type="submit" class="modal-form__order-button order-button">Отправить</button>
         </form>
     </div> 
+    <div class="main-blocker"></div>
     <div class="main-page">
     <div class="intro">
         <header class="intro__header">
             <button class="accent-button accent-button--menu menu-burger"></button>
+
             <span class="vertical-divider"></span>
+            
             <img src="./img/logo.svg" alt="Логотип компании" class="intro__logo">
             
-            <span class="vertical-divider"></span>
             
             <button class="accent-button accent-button--call"></button>
             <button class="accent-button accent-button--chat"></button>
@@ -184,11 +187,11 @@
         <h2 class="header-text">Цены на услуги</h2>
         <ul class="price-list swiper">
             <div class="price-list__wrapper swiper-wrapper">
-            <li class="price-item">
-                <th class="price-item__highlighted-value">Ремонтные услуги</th>
-                <th class="price-item__highlighted-value">Цена</th>
-                <th class="price-item__highlighted-value">Срок</th>
-                <th class="price-item__highlighted-value"></th>
+            <li class="price-item price-item--header">
+                <div class="price-item__value price-item__highlighted-value">Ремонтные услуги</div>
+                <div class="price-item__value price-item__highlighted-value">Цена</div>
+                <div class="price-item__value price-item__highlighted-value">Срок</div>
+                <div class="price-item__value price-item__highlighted-value"></div>
             </li>
             <li class="price-item swiper-slide">
                 <div class="price-item__value "><div class="price-item__description">Ремонтные услуги</div>Диагностика</div>

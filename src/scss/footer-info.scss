@@ -24,12 +24,23 @@
     }
     @media (min-width: 767px) {
         & {
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
             margin-bottom: 0;
+            padding-top: 32px;
+        }
+        &__text:first-child {
+            text-align: left;
+            padding-top: 0;
+           flex-basis: 30%;
+        }
+        &__text:nth-child(2) {
+           text-align: center;
+           flex-basis: 40%;
         }
         &__text:last-child {
             text-align: right;
+           flex-basis: 30%;
         }
     }
 }

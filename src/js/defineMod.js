@@ -1,7 +1,7 @@
 function defineMod() {
-    if(window.matchMedia('(min-width: 768px)').matches) { // от 768
+    if(window.matchMedia('(min-width: 767px)').matches) { // от 768
         console.log('Desktop mod');
-        if (window.matchMedia( '(min-width: 1440px)').matches) { // от 1120 и больше
+        if (window.matchMedia( '(min-width: 1439px)').matches) { // от 1120 и больше
             return 2;
         }
         else { // от 768 до 1120

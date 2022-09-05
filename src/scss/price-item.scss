@@ -10,47 +10,69 @@
     justify-content: space-between;
     flex-direction: column;
     
-    &__description {
-        color: #7E7E82;
-        font-size: 14px;
-        line-height: 16px;
-    }
     &__description:first-child {
         padding-top: 0;
     }
     
-    &__highlighted-value {
-        @extend .price-item__value;
-        text-align: left;
-        font-weight: normal;
-        color: #7E7E82;
-        background-color: #F8F8F8;
-    }
     &__value:last-child {
         position: absolute;
         bottom: 16px;
         right: 16px;
         text-align: right;
     }
-    &:first-child {
+    &--header {
         display: none;
     }
 
     @media (min-width: 767px) {
+        & {
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 0;
+            flex-direction: row;
+            border: none;
+            border-bottom: 1px solid #EAEAEA;
+            padding: 0;
+            min-height: 0;
+        }
+        &__highlighted-value {
+            text-align: left;
+            font-weight: normal;
+            color: #7E7E82;
+        }
+        &__highlighted-value:last-child {
+            min-width: 116.45px;
+        }
+
         &__description {
             display: none;
         }
-        &:first-child {
-            display: inline-block;
-        }
 
         &__value {
-            border-bottom: 1px solid #EAEAEA;
-            padding: 23px 16px;
+            padding: 16px;
+        }
+        &--header {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            background-color: #F8F8F8;
         }
 
+        &__value:first-child {
+            position: sticky;
+            flex-basis: 50%;
+        }
+        &__value:nth-child(2) {
+            position: sticky;
+            flex-basis: 20%;
+        }
+        &__value:nth-child(3) {
+            position: sticky;
+            flex-basis: 20%;
+        }
         &__value:last-child {
-            text-align: right;
+            position: sticky;
+            flex-basis: 10%;
         }
     }
 }

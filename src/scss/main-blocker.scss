@@ -1,0 +1,26 @@
+.main-blocker {
+    @media (min-width: 767px) {
+        & {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 9;
+        
+            width: 100%;
+            height: 100%;
+            background: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0;
+            visibility: hidden;
+
+            transition: all 30s ease-in;
+        }
+
+    }
+    &--display {
+        display: block;
+        visibility: visible;
+        opacity: 0.96;
+    }
+}

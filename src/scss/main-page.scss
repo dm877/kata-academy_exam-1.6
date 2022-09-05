@@ -1,4 +1,7 @@
 .main-page {
     background-color: #F8F8F8;
     overflow: scroll;
+    @media (min-width: 1439px) {
+        margin-left: 320px;    
+    }
 }
